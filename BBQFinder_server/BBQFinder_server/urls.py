@@ -19,8 +19,9 @@ from django.contrib import admin
 
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
-    path('', include('menu.urls')),
+    #path('polls/', include('polls.urls')),
+    path('menus/', include('menu.urls')),
+    path('', include('frontend.urls')),
     #url(r'^api/menu/', include('menu.urls', namespace='menu')),
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls'))
