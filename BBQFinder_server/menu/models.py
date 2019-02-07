@@ -1,9 +1,5 @@
 from django.db import models
 
-# Create your models here.
-from django.db import models
-
-
 class MenuItem(models.Model):
     item_name = models.CharField(max_length=200)
     item_description = models.CharField(max_length=500)
