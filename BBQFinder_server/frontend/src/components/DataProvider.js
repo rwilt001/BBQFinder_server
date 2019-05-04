@@ -8,7 +8,7 @@ class DataProvider extends Component {
   state = {
       data: [],
       loaded: false,
-      placeholder: "Loading..."
+      placeholder: "Loaded..."
     };
   componentDidMount() {
     fetch(this.props.endpoint)
